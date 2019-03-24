@@ -5,8 +5,14 @@ spring:
     password: admin
     driver-class-name: com.mysql.jdbc.Driver
 
+#debug: true
 
-debug: true
 mybatis:
   mapper-locations: classpath:mapper/*.xml
-#  type-aliases-package: tk.mybatis.springboot.model
+  type-aliases-package: tk.mybatis.springboot.model
+#  configuration:
+#    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+
+logging:
+  level:
+    tk.mybatis.springboot.dao: debug

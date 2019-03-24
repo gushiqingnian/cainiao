@@ -14,5 +14,7 @@ public class CommonTest {
     public void test(){
        List<User> users =  userService.selectAll();
        System.out.println(users);
+
+
     }
 }
