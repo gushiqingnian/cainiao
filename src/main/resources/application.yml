@@ -6,7 +6,7 @@ spring:
     driver-class-name: com.mysql.jdbc.Driver
 
 
-#debug: true
+debug: true
 mybatis:
   mapper-locations: classpath:mapper/*.xml
-  type-aliases-package: tk.mybatis.springboot.model
+#  type-aliases-package: tk.mybatis.springboot.model
